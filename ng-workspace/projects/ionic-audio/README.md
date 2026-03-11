@@ -17,7 +17,7 @@ After building your library with `ng build ionic-audio`, go to the dist folder `
 
 ## Running unit tests
 
-Run `ng test ionic-audio` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Unit tests for the workspace are run via the demo app: `ng test ionic-audio-demo` (Vitest).
 
 ## Further help
 

@@ -24,17 +24,7 @@
           },
           "defaultConfiguration": "production"
         },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "tsConfig": "projects/ionic-audio/tsconfig.spec.json",
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ]
-          }
-        }
-      }
+              }
     },
     "ionic-audio-demo": {
       "projectType": "application",
@@ -105,21 +95,10 @@
           }
         },
         "test": {
-          "builder": "@angular-devkit/build-angular:karma",
+          "builder": "@angular/build:unit-test",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
-            "tsConfig": "projects/ionic-audio-demo/tsconfig.spec.json",
-            "assets": [
-              "projects/ionic-audio-demo/src/favicon.ico",
-              "projects/ionic-audio-demo/src/assets"
-            ],
-            "styles": [
-              "projects/ionic-audio-demo/src/styles.css"
-            ],
-            "scripts": []
+            "buildTarget": "ionic-audio-demo:build:development",
+            "runnerConfig": "vitest.config.ts"
           }
         }
       }
