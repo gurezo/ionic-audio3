@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { IonicModule } from '@ionic/angular';
 import { IonicAudioModule, ITrackConstraint } from 'ionic-audio';
 import { Capacitor } from '@capacitor/core';
@@ -10,10 +10,9 @@ import { Keyboard } from '@capacitor/keyboard';
 @Component({
     selector: 'app-root',
     imports: [
-        CommonModule,
-        IonicModule,
-        IonicAudioModule,
-    ],
+    IonicModule,
+    IonicAudioModule
+],
     templateUrl: './app.component.html',
     styleUrl: './app.component.css'
 })
