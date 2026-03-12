@@ -1,6 +1,8 @@
-The MIT License
+MIT License
 
-Copyright (c) 2015-2017 Ariel Faur. [https://github.com/arielfaur](https://github.com/arielfaur), ariel.faur@gmail.com
+Copyright (c) 2015-2017 Ariel Faur
+Copyright (c) 2017 Johnny Bui
+Copyright (c) 2026 Akihiko Kigure
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
