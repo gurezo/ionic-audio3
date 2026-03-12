@@ -23,8 +23,8 @@
             }
           },
           "defaultConfiguration": "production"
-        },
-              }
+        }
+      }
     },
     "ionic-audio-demo": {
       "projectType": "application",

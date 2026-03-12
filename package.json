@@ -1,11 +1,23 @@
 {
   "name": "ionic-audio3",
   "version": "3.2.3",
-  "description": "An audio player originally built for Ionic 3 and Angular 5, now migrated to Angular 21, Ionic Angular 8, and Capacitor 8 in ng-workspace.",
+  "description": "An audio player originally built for Ionic 3 and Angular 5, now migrated to Angular 21, Ionic Angular 8, and Capacitor 8.",
+  "private": true,
   "scripts": {
-    "build": "cd ng-workspace && npm run build:lib",
-    "release": "npm run build && cd ng-workspace/dist/ionic-audio && npm publish",
-    "test": "cd ng-workspace && npm test"
+    "ng": "ng",
+    "start": "ng serve ionic-audio-demo",
+    "build": "ng build ionic-audio && ng build ionic-audio-demo",
+    "build:lib": "ng build ionic-audio",
+    "build:demo": "ng build ionic-audio-demo",
+    "watch": "ng build ionic-audio-demo --watch --configuration development",
+    "test": "ng test ionic-audio-demo",
+    "test:watch": "ng test ionic-audio-demo",
+    "test:coverage": "ng test ionic-audio-demo --coverage",
+    "cap:copy": "npx cap copy",
+    "cap:sync": "npx cap sync",
+    "cap:open:ios": "npx cap open ios",
+    "cap:open:android": "npx cap open android",
+    "release": "npm run build:lib && cd dist/ionic-audio && npm publish"
   },
   "repository": {
     "type": "git",
@@ -20,5 +32,36 @@
   ],
   "author": "Johnny Bui",
   "license": "MIT",
-  "homepage": "https://github.com/JohnnyBui/ionic-audio3"
+  "homepage": "https://github.com/JohnnyBui/ionic-audio3",
+  "dependencies": {
+    "@angular/animations": "^21.2.2",
+    "@angular/common": "^21.2.2",
+    "@angular/compiler": "^21.2.2",
+    "@angular/core": "^21.2.2",
+    "@angular/forms": "^21.2.2",
+    "@angular/platform-browser": "^21.2.2",
+    "@angular/platform-browser-dynamic": "^21.2.2",
+    "@angular/router": "^21.2.2",
+    "@capacitor/core": "^8.0.0",
+    "@capacitor/keyboard": "^8.0.0",
+    "@capacitor/splash-screen": "^8.0.0",
+    "@capacitor/status-bar": "^8.0.0",
+    "@ionic/angular": "^8.8.1",
+    "ionicons": "^8.0.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.15.1"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^21.2.2",
+    "@angular/cli": "^21.2.2",
+    "@angular/compiler-cli": "^21.2.2",
+    "@capacitor/android": "^8.0.0",
+    "@capacitor/cli": "^8.0.0",
+    "@capacitor/ios": "^8.0.0",
+    "jsdom": "^25.0.0",
+    "ng-packagr": "^21.2.0",
+    "typescript": "~5.9.3",
+    "vitest": "^4.0.0"
+  }
 }
