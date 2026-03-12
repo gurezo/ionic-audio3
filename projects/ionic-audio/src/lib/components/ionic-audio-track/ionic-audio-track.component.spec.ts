@@ -1,3 +1,4 @@
+/// <reference types="vitest/globals" />
 import { AudioTrackComponent } from './ionic-audio-track.component';
 import { AudioProvider } from '../../services/ionic-audio-providers';
 import { ITrackConstraint } from '../../models/ionic-audio-interfaces';
