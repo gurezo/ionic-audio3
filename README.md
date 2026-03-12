@@ -7,6 +7,16 @@ This library is a modernized fork of:
 
 It provides an audio player component set for Ionic applications that works out of the box in the browser and on device using an underlying audio provider (Web Audio in the browser; native audio via Capacitor / Cordova on device).
 
+## Origin
+
+This project is a modernized fork of:
+
+- [https://github.com/johnnybui/ionic-audio3](https://github.com/johnnybui/ionic-audio3)
+
+Originally based on:
+
+- [https://github.com/arielfaur/ionic-audio](https://github.com/arielfaur/ionic-audio)
+
 ## Current stack (this repo)
 
 This project has been **migrated** from Ionic 3 + Angular 5 to a modern Angular workspace:
@@ -148,7 +158,13 @@ export class Page1 {
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License.
+
+Original upstream authors retain copyright
+for their contributions.
+Additional modernization and maintenance are by Akihiko Kigure.
+
+See the [LICENSE.md](LICENSE.md) file for full details.
 
 ## Development notes
 
