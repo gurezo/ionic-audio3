@@ -1,6 +1,6 @@
 {
   "name": "@gurezo/ionic-audio-player",
-  "version": "0.0.1",
+  "version": "4.0.0",
   "peerDependencies": {
     "@angular/common": "^17.3.0",
     "@angular/core": "^17.3.0"
